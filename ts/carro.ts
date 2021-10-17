@@ -15,6 +15,7 @@ export class Carro {
     getCor():string{
         return this._cor
         //felipe
+        //gomes
     }
 
     setCor(cor:string):void{
