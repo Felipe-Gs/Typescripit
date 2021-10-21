@@ -14,6 +14,8 @@ var Carro = /** @class */ (function () {
     }
     Carro.prototype.getCor = function () {
         return this._cor;
+        //felipe
+        //gomes
     };
     Carro.prototype.setCor = function (cor) {
         this._cor = cor;
