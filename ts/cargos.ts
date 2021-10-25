@@ -4,24 +4,34 @@ interface ICachorro {
     parqueFavorito?: string;
 }
 
-/*const Meucahorro: ICachorro = {
-    nome: 'Apolo',
-    idade: 2,
-}*/
-
 class Meucahorro implements ICachorro{
     nome = 'Apolo';
     idade = 2;
+    parqueFavorito? = ''
 
-    constructor(nome:string, idade:number){
+    constructor(nome:string, idade:number, parqueFavorito?:string){
         this.nome = nome;
         this.idade = idade;
+        this.parqueFavorito = parqueFavorito;
     }
 }
-const cao = new Meucahorro('Apolo', 3);
+
+class Meucahorro2 implements ICachorro{
+    nome = 'Apolo';
+    idade = 2;
+    parqueFavorito? = ''
+
+    constructor(nome:string, idade:number, parqueFavorito?:string){
+        this.nome = nome;
+        this.idade = idade;
+        this.parqueFavorito = parqueFavorito;
+    }
+}
+const cao = new Meucahorro('Apolo', 3, 'Parque nacional');
+const cao2 = new Meucahorro2('Madruga', 4, 'Alto da Irmandade');
 
 console.log(cao);
-
+console.log(cao2);
 
 
 

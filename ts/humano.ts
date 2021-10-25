@@ -19,6 +19,9 @@ class Funcionario {
     }
     
 }
+
 let c: Funcionario;
 c = new Funcionario("Felipe", "Alto da irmandade");
 console.log(`Seu nome é ${c._nome} seu endereço é ${c.endereco},seu telefone é ${c.telefone} e seu cpf${c.cpf} `)
+
+

@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var direcao_1 = require("./direcao");
+var motor_1 = require("./motor");
+var veiculo_1 = require("./veiculo");
+var veiculo = new veiculo_1.Veiculo();
+//veiculo.ligar();
+var motor = new motor_1.Motor();
+var direcao = new direcao_1.Direcao();
+veiculo.direcao = direcao;
+veiculo.motor = motor;
+veiculo.motor.potencia = 1000;
+veiculo.direcao.cor = "vermelha";
+console.log("Motor: " + veiculo.motor.potencia + ",Cor: " + veiculo.direcao.cor);
