@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var autor_1 = require("./autor");
+var livro_1 = require("./livro");
+var titulo_1 = require("./titulo");
+var livro = new livro_1.Livro();
+livro.TipoDeCapa = 'Capa de marfim';
+console.log(livro.TipoDeCapa);
+var autor = new autor_1.Autor();
+autor.NomeDoAutor = 'Machado de Assis';
+console.log(autor.NomeDoAutor);
+var titulo = new titulo_1.Titulo();
+titulo.NomeDoTitulo = 'Memórias Postumas de Brás Cubas';
+console.log(titulo.NomeDoTitulo);
